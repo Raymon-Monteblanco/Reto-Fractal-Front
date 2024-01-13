@@ -1,0 +1,20 @@
+<nav class = "navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class = "navbar-nav">
+    <li class = "nav-item">
+      <a routerLink="pedidos" routerLinkActive="active" class = "nav-link">Lista de pedidos</a>
+    </li>
+    <li class = "nav-item">
+      <a routerLink="registrar-pedido" routerLinkActive="active" class = "nav-link">Añadir pedido</a>
+    </li>
+    <li class = "nav-item">
+      <a routerLink="productos" routerLinkActive="active" class = "nav-link">Lista de productos</a>
+    </li>
+    <li class = "nav-item">
+      <a routerLink="registrar-producto" routerLinkActive="active" class = "nav-link">Añadir producto</a>
+    </li>
+  </ul>
+</nav>
+<h1 class = "text-center">Gestión de pedidos y productos</h1>
+<div class = "container">
+  <router-outlet></router-outlet>
+</div>

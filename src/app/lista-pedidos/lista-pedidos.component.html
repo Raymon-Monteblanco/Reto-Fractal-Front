@@ -1,0 +1,21 @@
+<h2>Lista de pedidos</h2>
+<table class = "table table-striped">
+  <thead class = "table-dark">
+    <tr>
+      <th>ID</th>
+      <th>N° Pedido</th>
+      <th>Fecha de pedido</th>
+      <th>N° Productos</th>
+      <th>Precio Final</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pedidos of pedidos">
+      <td>{{pedidos.id}}</td>
+      <td>{{pedidos.numeroPedido}}</td>
+      <td>{{pedidos.fecha}}</td>
+      <td>{{pedidos.numeroProductos}}</td>
+      <td>{{pedidos.precioFinal | currency}}</td>
+    </tr>
+  </tbody>
+</table>
